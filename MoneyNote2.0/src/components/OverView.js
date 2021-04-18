@@ -172,8 +172,8 @@ const fomatDate = str => {
 };
 
 const OverView = ({navigation, route}) => {
-  const [nameWallet, setNameWallet] = useState(route?.params?.nameW);
-  const [totalWallet, setTotalWallet] = useState(route?.params?.moneyW);
+  const [nameWallet, setNameWallet] = useState(route?.params?.nameW || 0);
+  const [totalWallet, setTotalWallet] = useState(route?.params?.moneyW || 0);
   const dispatch = useDispatch();
   const dataS = useSelector(state => state.FSpending.dataSpending);
   const dataE = useSelector(state => state.FEarning.dataEarning);
