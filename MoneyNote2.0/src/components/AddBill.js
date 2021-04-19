@@ -331,7 +331,7 @@ const AddBill = ({route, navigation}) => {
             marginLeft: 40,
           }}>
           <TextInput
-            value={tmoney.current.toString()}
+            value={tmoney.current > 0 ? tmoney.current.toString() : 0}
             placeholderTextColor={`${colori}`}
             placeholder="0"
             style={{
