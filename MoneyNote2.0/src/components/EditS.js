@@ -479,8 +479,8 @@ const EditS = ({route, navigation}) => {
               padding: 10,
             }}>
             <Text style={{fontSize: 20}}>
-              {date.getFullYear()}-{foteDate(date.getMonth() + 1)}-
-              {foteDate(date.getDate())}
+              {foteDate(date.getDate())}/{foteDate(date.getMonth() + 1)}/
+              {date.getFullYear()}
             </Text>
           </View>
         </TouchableOpacity>
